@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Krub&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+/*Color codes to be use*/
+:root{
+    --col-old-rose:#BD2363;
+    --col-cardinal:#9c1849;
+    --col-blue-whale:#1d3944;
+    --col-blue-stone:#145768;
+
+    --col-free-speech-green:#2d814d;
+    --col-white:#fff;
+    --col-muted-gray:#f0f0f0;
+    --col-muted-text:#747272;
+    --col-sandrift:#af8c78;
+}
+
+/*----------------------------------------------*/
+/* REMOVING DEFAULTS */
+/*----------------------------------------------*/
+body{margin: 0;}
+ul{margin: 0;}
+/*----------------------------------------------*/
+/*REUSABLE COMPONENTS */
+/*----------------------------------------------*/
+.row{display: flex;}
+.col-2{ flex-basis: calc(99% / 2); padding: 1em;/*border:1px solid black;*/}
+.col-3{ flex-basis: calc(99% / 3); padding: 1em;}
+.ccol-7{flex-basis: calc(100% / 7);}
+
+.text-center{text-align: center;}
+.text-uppercase{text-transform: uppercase;}
+.text-muted{color:var(--col-muted-text);}
+.text-bold{font-weight: bold;}
+.font-size{font-size: 1.7em;}
+.margin-0{margin: 0;}
+
+.col-white{color:var(--col-white);}
+.col-cardinal{color:var(--col-cardinal);}
+.col-free-green-speech{color:var(--col-free-speech-green);}
+.col-old-rose{color:var(--col-old-rose);}
+.col-blue-stone{color:var(--col-blue-stone);}
+.col-sandrift{color: var(--col-sandrift);}
+
+blockquote p{
+    font-family: 'Bad Script', cursive, sans-serif;
+    font-size: 2em;
+    margin: 0;
+    color: var(--col-blue-whale);
+}
+cite{color:var(--col-blue-whale);font-family: 'Bad Script', cursive, sans-serif;}
+/*----------------------------------------------*/
+/* ADDING STYLE */
+/*----------------------------------------------*/
+body{
+    margin: 0;
+    line-height: 2;
+    font-family: 'Krub', sans-serif;
+    text-align: justify;
+}
+/*----------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------*/
+.header{
+    /*linear-gradient(90deg, rgba(22,27,21,0.5833683815323004) 0%, rgba(57,17,5,0.5469538157059699) 56%, rgba(0,0,0,0.3956933115042892) 100%),*/
+    background-image: url(/images/banner3.jpg);
+    height:70vh;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Bad Script', cursive, sans-serif;
+}
+.navigation_menu{
+    max-width: 80em;
+    max-height: 8em;
+    margin: 0 auto 1em auto;
+}
+.navigation_menu ul{justify-content: center;}
+.navigation_menu li{
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+}
+.navigation_menu a, .section_footer__about a{text-decoration: none; color: var(--col-blue-whale);}
+.navigation_menu a:hover{text-decoration: none; color: var(--col-blue-stone);}
+.website_logo_container{text-align: center; margin: 5em auto auto auto;}
+.website_logo_container img{max-height: 20em; max-width: 20em; }
+/*----------------------------------------------*/
+/* PAGE-WRAPPER */
+/*----------------------------------------------*/
+.page-wrapper{
+    background-color: var(--col-muted-gray);
+    border-radius: 6px;
+    -webkit-box-shadow: 8px 7px 12px -7px rgba(87,87,87,1);
+    -moz-box-shadow: 8px 7px 12px -7px rgba(87,87,87,1);
+    box-shadow: 8px 7px 12px -7px rgba(87,87,87,1);
+    max-width: 90em;
+    margin: -5em  auto auto auto;
+    box-sizing: border-box;
+    padding: 4em;
+}
+.tag-line{
+    text-align: center;
+    /*font-family: 'Satisfy', cursive;*/
+    font-family: 'Bad Script', cursive, sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    color:var(--col-blue-stone);
+}
+/*----------------*/
+/* INDEX PAGE*/
+/*----------------*/
+.story__image img{max-width: 100%;}
+.text-on-image{
+    font-family: 'Bad Script', cursive, sans-serif;
+    font-size: 4em;
+    color: var(--col-cardinal);
+    margin: 0  0 0 -3em ;
+}
+.story__link h2{font-size: 1.8em;}
+/*----------------*/
+/* STORY PAGE */
+/*----------------*/
+.story_side_img{max-width: 100%;}
+.taj-mahal-image{height: 20em; max-width: 100%;}
+/*----------------------------------------------*/
+/* FOOTER */
+/*----------------------------------------------*/
+.footer{
+    background-color: var(--col-muted-gray);
+    margin-top: 4em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+    .footer__about_logo{max-width: 8em;}
+    .footer__social-media{padding: 0;}
+    .social-media{list-style-type: none; flex-basis: 5em;}
+    
+    fieldset{
+       /* max-width: 20em;*/
+        border-radius: 6px; 
+        border:1px solid var(--col-sandrift);
+        margin: 0;
+    }
+    fieldset p{margin: 0;}
+    fieldset h5{margin: 0;}
+
+
